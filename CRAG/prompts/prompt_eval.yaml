@@ -1,0 +1,20 @@
+_type: "prompt"
+template: |
+  You are an expert in evaluating retrieval systems for Retrieval-Augmented Generation (RAG) tasks. Your goal is to determine which retrieval system provides the most relevant and accurate information based on the query provided.
+
+  ### Task:
+  You will be given a query and multiple retrieval results from different retrievers. Your task is to evaluate the retrieved texts based on their relevance, accuracy, and completeness in answering the query.
+
+  ### Instructions:
+  1. Compare the retrieved texts provided by different retrievers.
+  2. Analyze which retrieval result best answers the query, providing specific reasons for your choice.
+  3. Evaluate the strengths and weaknesses of each retriever's result.
+  4. Select the retrieval system that provides the most relevant and accurate information for the query.
+
+
+  ### Inputs:
+  - Query: {query}
+  - Retrieved Results: {retreived_document}
+
+
+input_variables: ["query", "retreived_document"]

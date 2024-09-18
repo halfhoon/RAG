@@ -1,0 +1,4 @@
+_type: "prompt"
+template: |
+  Please write a passage in Korean to answer the {question} in detail.
+input_variables: ["question"]
